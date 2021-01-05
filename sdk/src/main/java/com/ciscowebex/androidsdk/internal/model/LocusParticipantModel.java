@@ -266,7 +266,7 @@ public class LocusParticipantModel {
     }
 
     public boolean isValidCiUser() {
-        return isUserOrResourceRoom();
+        return getType() == LocusParticipantModel.Type.USER || getType() == LocusParticipantModel.Type.RESOURCE_ROOM;
     }
 
     public boolean isUserOrResourceRoom() {
